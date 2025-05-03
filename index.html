@@ -5,79 +5,276 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ccf005d8e8.js" crossorigin="anonymous"></script>
     <title>JAMH</title>
 </head>
 <body>
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg bg-transparent">
-        <div class="container">
-          <a class="navbar-brand" href="#">
-            <i style="color: green;" class="fa fa-envira fs-2" aria-hidden="true" id="nav"></i>
-            <span class="fs-3">JAMH</span>
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mx-4 p-2 fs-5">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#home">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#about">About us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#services">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#contact">Contact us</a>
-              </li>
-              
+   
+  
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+  <div class="container">
+    <!-- Brand -->
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <i class="fa fa-envira text-success fs-3 me-2" aria-hidden="true"></i>
+      <span class="fs-4 fw-bold text-success">JAMH</span>
+    </a>
+
+    <!-- Toggle button for mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Nav links -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5">
+        <li class="nav-item">
+          <a class="nav-link text-dark nav-hover" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark nav-hover" href="#about">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark nav-hover" href="#services">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark nav-hover" href="#services">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark nav-hover" href="#contact">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero-section" style="background: #fff; margin-top: 0;">
+  <div class="container-fluid  mt-5 py-5" >
+    <div class="row align-items-center">
+
+      <!-- Left content -->
+      <div class="col-md-6 px-5 pt-5 pb-3">
+        <small class="text-uppercase text-success fw-bold">ORGANIC SEED</small>
+        <h1 class="display-5 fw-bold text-dark mt-3 mb-4">Premium Organic Seeds for a Healthier Future</h1>
+        <p class="text-muted mb-3">
+          Grow naturally with our carefully selected organic seeds — perfect for home gardeners, farmers, and health-conscious growers.
+        </p>
+        <p class="text-muted mb-4">
+          Organic Seed is your trusted source for 100% non-GMO, chemical-free seeds. We offer a wide variety of premium vegetable, herb,
+          and flower seeds that thrive in diverse climates. Start your journey to healthier harvests with seeds that support sustainable agriculture.
+        </p>
+        <a href="#" class="btn btn-success btn-lg" style="background-color: #28a745; border: none;">Shop Now</a>
+      </div>
+
+      <!-- Right image with diagonal clip -->
+      <div class="col-md-6 position-relative p-0">
+        <div style="clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%); overflow: hidden;">
+          <img src="./image/planting-9001234_1920.png" alt="Organic Seed Hero" class="img-fluid w-100 h-100" style="object-fit: cover;">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    <!-- About Section -->
+<div class="bg-light py-5">
+  <div class="container mt-5 " id="about" >
+    <div class="row align-items-center">
+      <!-- Left Content -->
+      <div class="col-sm-12 col-md-6">
+        <div class="home-content">
+          <h1 class="display-5 text-center fw-bold text-success mb-4">About Us</h1>
+  
+          <h3 class="text-dark">Welcome to <span class="text-success fw-bold">Organic Seed</span></h3>
+  
+          <p class="text-muted">
+            At Organic Seed, we believe health and sustainability begin with what you plant. We're passionate about offering premium, non-GMO, and chemical-free seeds that support eco-friendly agriculture and nutrient-rich harvests.
+          </p>
+          <p class="text-muted">
+            Whether you're a home gardener or a professional grower, our seeds are handpicked for quality, purity, and adaptability across different climates. From herbs and vegetables to rare heirloom varieties, we help you grow the future—naturally.
+          </p>
+  
+          <div class="btn-box mt-4">
+            <a href="./about.html">
+              <button class="btn btn-success me-2">Read More</button>
+            </a>
+            <a href="#contact">
+              <button class="btn btn-outline-success">Contact Us</button>
+            </a>
           </div>
         </div>
-      </nav>
-      
-  <!-- hero section -->
-  <section class="hero-section" id="home">
-    <div class="container">
-      <div class="row"> 
-        <div col-12>
-          <h1 class="text-white header_one display-4 mb-5" data-aos="zoom-in-down" data-aos-duration="2500">
-            WELCOME TO <br> JANET ABEDE <br>MASSAGE HOME
-          </h1>
-          <a href="https://WA.me/+2348089360606" class="btn btn-main">Shop now</a>
-        </div>
       </div>
-    </div>
-   </section>       
-   <!-- About Section -->
-<div class="container mt-5 " id="about">
-  <div class="row">
-    <div class="col-sm-12 col-md-6">
-      <div class="home-content">
-        <h3>Hi</h3>
   
-        <h1><b>i'm <span>Janet<br></span></b></h1>
-        <p>At janet abede massage home, we believe that true nourishment starts at the seed. We specialize in offering premium, organic seeds designed to fuel your body, mind, and spirit. From protein-rich hemp seeds to omega-packed chia and flax, every seed we offer is a small but powerful source of natural wellness.          
-          our seeds are a simple, powerful way to reconnect with nature’s original superfoods. At janet abede massage home, we’re not just selling seeds — we’re sowing the foundation for stronger bodies, clearer minds, and a healthier world.</p>
-        <div class="btn-box">
-        <a href="./about.html">    
-          <button class="btn-1">Read More</button>
-        </a>
-        <a href="">
-          <button class="btn-2">Contact us for more info</button>
-        </a>
-      </div>
-      </div>
-    </div>
-    <div class="col-sm-12 col-md-6 mt-3 d-flex align-items-center justify-content-center">
-      <div class="img-box">
-        <img src="./mypic.png" alt="" style="object-fit: contain;"> 
+      <!-- Right Image -->
+      <div class="col-sm-12 col-md-6 mt-4 mt-md-0 d-flex align-items-center justify-content-center">
+        <div class="img-box">
+          <img src="./image/pngwing.com.png" 
+               alt="Organic Seeds" 
+               class="img-fluid rounded " 
+               style="object-fit: cover; max-height: 400px;">
+        </div>
       </div>
     </div>
   </div>
- </div>
+</div>
+  
+    
+       <!-- services -->
+       <section class="features mt-5 py-5" id="features">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center mb-4 ">
+              <h2 class="fw-bold text-success">Why Choose Janet Abede Massage</h2>
+              <p class="text-muted">Deliver messages effectively with reliable bulk SMS features</p>
+            </div>
+          </div>
+      
+          <div class="row text-center gy-4">
+            <div class="col-md-4 col-sm-6">
+              <div class="card h-100 shadow-sm border-0">
+                <div class="card-body">
+                  <i class="fas fa-sms fa-2x text-success mb-3"></i>
+                  <h5 class="card-title fw-bold">Nationwide SMS Coverage</h5>
+                  <p class="card-text">Send SMS to all networks in Nigeria including DND numbers, with guaranteed delivery.</p>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-md-4 col-sm-6">
+              <div class="card h-100 shadow-sm border-0">
+                <div class="card-body">
+                  <i class="fas fa-globe-africa fa-2x text-success mb-3"></i>
+                  <h5 class="card-title fw-bold">Global Reach</h5>
+                  <p class="card-text">Reach over 600 networks worldwide with fast, affordable, and secure message delivery.</p>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-md-4 col-sm-6">
+              <div class="card h-100 shadow-sm border-0">
+                <div class="card-body">
+                  <i class="fas fa-chart-line fa-2x text-success mb-3"></i>
+                  <h5 class="card-title fw-bold">Real-Time Delivery Reports</h5>
+                  <p class="card-text">Track your message status instantly and monitor SMS performance with precision.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+<!-- product section -->
+<div class="container py-5">
+  <h2 class="text-center mb-4">Our Products</h2>
+
+  <!-- Filter Buttons -->
+  <div class="text-center mb-4">
+    <button class="btn btn-outline-success category-btn active" data-category="All">All</button>
+    <button class="btn btn-outline-success category-btn" data-category="Herbs">Herbs</button>
+    <button class="btn btn-outline-success category-btn" data-category="Seeds & Powders">Seeds & Powders</button>
+    <button class="btn btn-outline-success category-btn" data-category="Massage & Services">Massage & Services</button>
+    <button class="btn btn-outline-success category-btn" data-category="Men’s Health">Men’s Health</button>
+    <button class="btn btn-outline-success category-btn" data-category="Women’s Health">Women’s Health</button>
+    <button class="btn btn-outline-success category-btn" data-category="Others">Others</button>
+  </div>
+
+  <!-- Product List -->
+  <div class="row" id="product-list">
+    <!-- JavaScript will inject products here -->
+  </div>
+</div>
+  
+<!-- contact -->
+ <div class="container my-5">
+  <div class="row">
+    <div class="main-contact pb-5">
+      <div class="contact">
+        <h1 class="text-center ">Customer Care  </h1>
+        <p style="color: rgb(128, 128, 128);">Whether it’s a question about our services or suggestions for improvement, we’re eager to hear from you.</p>
+      </div>
+    </div>
+    <!-- Google Map -->
+    <div class="col-md-6 mb-4">
+      <iframe
+        src="https://www.google.com/maps?q=Ikorodu,+Lagos&output=embed"
+        width="100%"
+        height="300"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="col-md-6">
+      <h4>Select Options for Business Engagement</h4>
+      <div class="btn-group mb-3" role="group">
+        <button type="button" class="btn btn-outline-primary active" id="general">General Inquiry</button>
+        <button type="button" class="btn btn-outline-secondary" id="support">Product Support</button>
+      </div>
+
+      <form id="whatsappForm">
+        <div class="row g-2">
+          <div class="col-md-6">
+            <input type="text" class="form-control" id="firstName" placeholder="First Name" required>
+          </div>
+          <div class="col-md-6">
+            <input type="text" class="form-control" id="lastName" placeholder="Last Name" required>
+          </div>
+        </div>
+        <input type="email" class="form-control my-2" id="email" placeholder="Your Email" required>
+        <textarea class="form-control mb-2" id="message" rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn btn-dark w-100">Send Message</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- footer -->
+<footer class="bg-dark text-white pt-5 pb-3">
+  <div class="container">
+    <div class="row text-center text-md-start">
+      <!-- About Us -->
+      <div class="col-md-4 mb-4">
+        <h5>About Us</h5>
+        <p class="small">
+          We offer nutrient-rich organic seeds and plant-based products that support 
+          a healthy, balanced lifestyle from the inside out.
+
+
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-4 mb-4">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Services</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Pricing</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-md-4 mb-4">
+        <h5>Contact Info</h5>
+        <p class="mb-1">Email: info@abebi.com</p>
+        <p class="mb-1">Phone: 123456789</p>
+        <p class="mb-0">Address: Lagos, Nigeria</p>
+      </div>
+    </div>
+
+    <hr class="border-light" />
+    <p class="text-center mb-0 small">
+      &copy; 2025 abebi. All Rights Reserved.
+    </p>
+  </div>
+</footer>
     <script src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
 </body>
