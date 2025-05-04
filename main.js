@@ -88,3 +88,19 @@ const products = [
     
     window.open(url, "_blank");
   });
+
+// contact
+function sendToWhatsApp() {
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const message = document.getElementById("message").value.trim();
+
+  const phoneNumber = "+234 706 844 4891"; // Replace with your WhatsApp number (no + or 0)
+  const text = `Hello! My name is ${name}. My email is ${email}. Message: ${message}`;
+  const encodedText = encodeURIComponent(text);
+  const url = `https://wa.me/${phoneNumber}?text=${encodedText}`;
+
+  window.open(url, "_blank");
+}
+
+

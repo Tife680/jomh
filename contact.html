@@ -8,7 +8,196 @@
     <title>JAMH</title>
 </head>
 <body>
+    <!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+    <div class="container">
+      <!-- Brand -->
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <i class="fa fa-envira text-success fs-3 me-2" aria-hidden="true"></i>
+        <span class="fs-4 fw-bold text-success">JAMH</span>
+      </a>
+  
+      <!-- Toggle button for mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <!-- Nav links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5">
+          <li class="nav-item">
+            <a class="nav-link text-dark nav-hover" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark nav-hover" href="./about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark nav-hover" href="./services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark nav-hover" href="./product.html">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark nav-hover" href="./contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <style>
+    .contact-section {
+      padding: 60px 0;
+    }
+
+    .contact-image {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .form-control {
+      background-color: #fffdf8;
+      border: none;
+      border-bottom: 2px solid green;
+      border-radius: 0;
+      box-shadow: none;
+    }
+
+    .form-control:focus {
+      border-color: green;
+      box-shadow: none;
+    }
+
+    .contact-box {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    }
+
+    .contact-btn {
+      background-color: green;
+      color: white;
+      border-radius: 30px;
+      padding: 10px 30px;
+    }
+
+    .contact-btn:hover {
+      background-color: transparent;
+    }
+
+    .social-icons a {
+      margin-right: 10px;
+      color: green;
+      text-decoration: none;
+      font-size: 20px;
+    }
+
+    .social-icons a:hover {
+      color: green;
+    }
+
+    .label-title {
+      color: green;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+<section class="contact-section">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- Image Column -->
+      <div class="col-md-6 mb-4 mb-md-0">
+        <img src="https://d2jx2rerrg6sh3.cloudfront.net/image-handler/picture/2021/9/shutterstock_251566309.jpg" alt="Organic Contact" class="contact-image">
+      </div>
+
+      <!-- Contact Form Column -->
+      <div class="col-md-6">
+        <h2 class="mb-4">Contact Us</h2>
+        <div class="contact-box">
+            <form onsubmit="sendToWhatsApp(); return false;">
+            <div class="mb-3">
+              <label class="label-title">Full Name</label>
+              <input type="text" class="form-control" placeholder="Enter your name" />
+            </div>
+            <div class="mb-3">
+              <label class="label-title">E-mail</label>
+              <input type="email" class="form-control" placeholder="Enter your email" />
+            </div>
+            <div class="mb-3">
+              <label class="label-title">Message</label>
+              <textarea class="form-control" rows="3" placeholder="Write your message..."></textarea>
+            </div>
+            <button type="submit" class="btn contact-btn">Contact Us</button>
+          </form>
+
+
+      
+
+          <!-- Contact Details -->
+          <div class="mt-4">
+            <p><strong>Contact:</strong> hello@organicwellness.com</p>
+            <p><strong>Based in:</strong> Lagos, Nigeria</p>
+            <div class="social-icons mt-2">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
     
+<!-- footer -->
+<footer class="bg-dark text-white pt-5 pb-3">
+    <div class="container">
+      <div class="row text-center text-md-start">
+        <!-- About Us -->
+        <div class="col-md-4 mb-4">
+          <h5>About Us</h5>
+          <p class="small">
+            We offer nutrient-rich organic seeds and plant-based products that support 
+            a healthy, balanced lifestyle from the inside out.
+  
+  
+          </p>
+        </div>
+  
+        <!-- Quick Links -->
+        <div class="col-md-4 mb-4">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Services</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Pricing</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Contact</a></li>
+          </ul>
+        </div>
+  
+        <!-- Contact Info -->
+        <div class="col-md-4 mb-4">
+          <h5>Contact Info</h5>
+          <p class="mb-1">Email: info@abebi.com</p>
+          <p class="mb-1">Phone: 123456789</p>
+          <p class="mb-0">Address: Lagos, Nigeria</p>
+        </div>
+      </div>
+  
+      <hr class="border-light" />
+      <p class="text-center mb-0 small">
+        &copy; 2025 abebi. All Rights Reserved.
+      </p>
+    </div>
+  </footer>
     <script src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
 </body>
