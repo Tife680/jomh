@@ -1,18 +1,17 @@
 const products = [
-    { name: "Womb and fertility massage", price: "₦25,000", category: "Massage & Services" , img:"https://cdn.pixabay.com/photo/2024/07/01/04/16/ai-generated-8864310_960_720.png"},
-    { name: "Walking store", price: "₦10,000 per session", category: "Massage & Services", img:"" },
-    { name: "Vitex seed", price: "₦4,000", category: "Seeds & Powders",img:"" },
-    { name: "Pumpkin", price: "₦2,000", category: "Seeds & Powders",img:"" },
-    { name: "Sunflower", price: "₦1,500", category: "Seeds & Powders",img:"" },
-    { name: "Womb setting herbs", price: "₦30,000", category: "Herbs",img:"" },
-    { name: "Infection herbs", price: "₦20,000", category: "Herbs",img:"" },
-    { name: "Weak erection for men", price: "₦25,000", category: "Men’s Health",img:"" },
-    { name: "Fertility herbs", price: "₦35,000", category: "Women’s Health",img:"" },
-    { name: "Original honey", price: "₦?", category: "Others",img:"" },
-    { name: "bolu", price: "₦?", category: "All",img:"" },
+  { name: "Womb and fertility massage", price: "₦25,000", category: "Massage & Services", img:"https://cdn.pixabay.com/photo/2024/07/01/04/16/ai-generated-8864310_960_720.png"},
+  { name: "Vitex seed", price: "₦4,000", category: "Seeds & Powders", img:"https://emstahherbals.com/wp-content/uploads/2024/11/WhatsApp-Image-2024-11-23-at-00.28.27.jpeg" },
+  { name: "Pumpkin", price: "₦2,000", category: "Seeds & Powders", img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTjz47SScAhB9bxJx_SPAHt_Ao0ttvEAMyzw&s" },
+  { name: "Sunflower", price: "₦1,500", category: "Seeds & Powders", img:"https://www.amritahealthfoods.com/cdn/shop/articles/img-1677260300100.png?v=1677345526" },
+  { name: "Womb setting herbs", price: "₦30,000", category: "Herbs", img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZJwPAZk2l1D462XB-kG5fak8mH8MvrE2fq9fCwXarZH4-YXG5XEXdPIJRXG0O9ejKtQ8&usqp=CAU" },
+  { name: "Infection herbs", price: "₦20,000", category: "Herbs", img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqKPWXjwfHE8lx2APaBbJXibqSUyUtbEXFmBbq-9aubc8n3Si1c2_anQueE-Eat5r12KE&usqp=CAU" },
+  { name: "Weak erection for men", price: "₦25,000", category: "Men’s Health", img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXpbJpIvZNNTgciuCM9H5r5a87iuXtQ9A3Yw&s" },
+  { name: "Fertility herbs", price: "₦35,000", category: "Women’s Health", img:"https://cdn.shopify.com/s/files/1/0058/0252/4783/products/Gaia-Herbs-Fertility-Support_LAA87060_101-0519_PDP_x280.png?v=1609883041" },
+  { name: "Original honey", price: "₦5,000", category: "Others", img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLVFEpuXLq8sIp_0tZVDJuFihIfk3SLBN9pQ&s" }
+];
+
 
     // Add more products as needed
-  ];
 
   const productList = document.getElementById("product-list");
   function renderProducts(filter) {
