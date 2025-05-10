@@ -102,4 +102,20 @@ function sendToWhatsApp() {
   window.open(url, "_blank");
 }
 
+document.getElementById("whatsappForm").addEventListener("submit", function (e) {
+  e.preventDefault(); // Prevent the form from submitting normally
 
+  const firstName = document.getElementById("firstName").value;
+  const lastName = document.getElementById("lastName").value;
+  const email = document.getElementById("email").value;
+  const message = document.getElementById("message").value;
+
+  // Replace with her actual WhatsApp number (in international format, no + or 0 at start)
+  const phoneNumber = "+2347068444891"; // Example: 919876543210
+
+  const text = `Hello, my name is ${firstName} ${lastName}%0AEmail: ${email}%0AMessage: ${message}`;
+  const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
+
+  // Redirect to WhatsApp
+  window.open(url, "_blank");
+});
