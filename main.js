@@ -30,7 +30,7 @@ const products = [
             </div>
             <p class="text-muted">${product.price}</p>
             <span class="badge bg-secondary mb-2">${product.category}</span>
-            <button class="btn btn-success w-100">Buy Now</button>
+           <button class="btn btn-success w-100"><a href="https://wa.me/+23407068444891 " class="btn btn-success btn-lg" style="border: none;">Buy Now</a>
           </div>
         </div>`;
       productList.insertAdjacentHTML("beforeend", card);
