@@ -117,41 +117,41 @@
       </div>
 
       <!-- Contact Form Column -->
-      <div class="col-md-6">
-        <h2 class="mb-4">Contact Us</h2>
-        <div class="contact-box">
-            <form onsubmit="sendToWhatsApp(); return false;">
-            <div class="mb-3">
-              <label class="label-title">Full Name</label>
-              <input type="text" class="form-control" placeholder="Enter your name" />
-            </div>
-            <div class="mb-3">
-              <label class="label-title">E-mail</label>
-              <input type="email" class="form-control" placeholder="Enter your email" />
-            </div>
-            <div class="mb-3">
-              <label class="label-title">Message</label>
-              <textarea class="form-control" rows="3" placeholder="Write your message..."></textarea>
-            </div>
-            <button type="submit" class="btn contact-btn">Contact Us</button>
-          </form>
-
-
-      
-
-          <!-- Contact Details -->
-          <div class="mt-4">
-            <p><strong>Contact:</strong> hello@organicwellness.com</p>
-            <p><strong>Based in:</strong> Lagos, Nigeria</p>
-            <div class="social-icons mt-2">
-              <a href="#"><i class="fa-brands fa-facebook"></i></a>
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-              <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            </div>
-          </div>
+       <!-- Contact Form Column -->
+<div class="col-md-6">
+  <h2 class="mb-4">Contact Us</h2>
+  <div class="contact-box">
+    <form onsubmit="sendToWhatsApp(); return false;">
+      <div class="mb-3">
+        <label class="label-title">Full Name</label>
+        <input type="text" id="firstName" class="form-control" placeholder="Enter your first name" required />
+      </div>
+      <div class="mb-3">
+        <label class="label-title">Last Name</label>
+        <input type="text" id="lastName" class="form-control" placeholder="Enter your last name" required />
+      </div>
+      <div class="mb-3">
+        <label class="label-title">E-mail</label>
+        <input type="email" id="email" class="form-control" placeholder="Enter your email" required />
+      </div>
+      <div class="mb-3">
+        <label class="label-title">Inquiry Type</label>
+        <select id="inquiryType" class="form-control" required>
+          <option value="General">General</option>
+          <option value="Partnership">Partnership</option>
+          <option value="Support">Support</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label class="label-title">Message</label>
+        <textarea id="message" class="form-control" rows="3" placeholder="Write your message..." required></textarea>
+      </div>
+      <button type="submit" class="btn contact-btn">Contact Us</button>
+    </form>
+  </div>
+</div>
         </div>
       </div>
-
     </div>
   </div>
 </section>
@@ -167,8 +167,6 @@
           <p class="small">
             We offer nutrient-rich organic seeds and plant-based products that support 
             a healthy, balanced lifestyle from the inside out.
-  
-  
           </p>
         </div>
   
@@ -176,19 +174,18 @@
         <div class="col-md-4 mb-4">
           <h5>Quick Links</h5>
           <ul class="list-unstyled">
-            <li><a href="#" class="text-white text-decoration-none">Home</a></li>
-            <li><a href="#" class="text-white text-decoration-none">Services</a></li>
-            <li><a href="#" class="text-white text-decoration-none">Pricing</a></li>
-            <li><a href="#" class="text-white text-decoration-none">Contact</a></li>
+            <li><a href="./index.html" class="text-white text-decoration-none">Home</a></li>
+            <li><a href="./services.html" class="text-white text-decoration-none">Services</a></li>
+            <li><a href="./product.html" class="text-white text-decoration-none">Pricing</a></li>
+            <li><a href="./contact.html" class="text-white text-decoration-none">Contact</a></li>
           </ul>
         </div>
   
         <!-- Contact Info -->
         <div class="col-md-4 mb-4">
           <h5>Contact Info</h5>
-          <p class="mb-1">Email: info@abebi.com</p>
-          <p class="mb-1">Phone: 123456789</p>
-          <p class="mb-0">Address: Lagos, Nigeria</p>
+          <p class="mb-1">Email: Janetabede@gmail.com</p>
+          <p class="mb-1">Phone: +234 706 844 4891</p>
         </div>
       </div>
   
@@ -199,6 +196,7 @@
     </div>
   </footer>
     <script src="main.js"></script>
+    <script src="contact.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

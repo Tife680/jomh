@@ -88,34 +88,3 @@ const products = [
     window.open(url, "_blank");
   });
 
-// contact
-function sendToWhatsApp() {
-  const name = document.getElementById("name").value.trim();
-  const email = document.getElementById("email").value.trim();
-  const message = document.getElementById("message").value.trim();
-
-  const phoneNumber = "+234 706 844 4891"; // Replace with your WhatsApp number (no + or 0)
-  const text = `Hello! My name is ${name}. My email is ${email}. Message: ${message}`;
-  const encodedText = encodeURIComponent(text);
-  const url = `https://wa.me/${phoneNumber}?text=${encodedText}`;
-
-  window.open(url, "_blank");
-}
-
-document.getElementById("whatsappForm").addEventListener("submit", function (e) {
-  e.preventDefault(); // Prevent the form from submitting normally
-
-  const firstName = document.getElementById("firstName").value;
-  const lastName = document.getElementById("lastName").value;
-  const email = document.getElementById("email").value;
-  const message = document.getElementById("message").value;
-
-  // Replace with her actual WhatsApp number (in international format, no + or 0 at start)
-  const phoneNumber = "+2347068444891"; // Example: 919876543210
-
-  const text = `Hello, my name is ${firstName} ${lastName}%0AEmail: ${email}%0AMessage: ${message}`;
-  const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
-
-  // Redirect to WhatsApp
-  window.open(url, "_blank");
-});

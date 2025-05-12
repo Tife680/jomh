@@ -62,7 +62,7 @@ const products = [
         const card = `
         <div class="col-md-4">
           <div class="product-card bg-white shadow-sm">
-            <img src="${product.img}" alt="${product.name}" class="img-fluid mb-2 rounded" />
+            <img src="${product.img}" alt="${product.name}" class="img-fluid mb-2 rounded"/>
             <div class="d-flex justify-content-between align-items-center">
               <h5 class="mb-1">${product.name}</h5>
               <button class="btn btn-outline-danger btn-sm like-btn">
@@ -71,7 +71,8 @@ const products = [
             </div>
             <p class="text-muted">${product.price}</p>
             <span class="badge bg-secondary mb-2">${product.category}</span>
-            <button class="btn btn-success w-100">Buy Now</button>
+            <button class="btn btn-success w-100"><a href="https://wa.me/+23407068444891 " class="btn btn-success btn-lg" style="border: none;">Buy Now</a>
+          </button>
           </div>
         </div>`;
       productList.insertAdjacentHTML("beforeend", card);
