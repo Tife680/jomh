@@ -1,5 +1,5 @@
 const products = [
-  { name: "Womb and fertility massage", price: "₦25,000", category: "Massage & Services", img:"https://cdn.pixabay.com/photo/2024/07/01/04/16/ai-generated-8864310_960_720.png"},
+  { name: "Womb and fertility massage", price: "₦25,000", category: "Massage & Services", img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4ihm2TuyfHZy3onpvDmyPZ1djS8vSHZeyTw&s"},
   { name: "Vitex seed", price: "₦4,000", category: "Seeds & Powders", img:"https://emstahherbals.com/wp-content/uploads/2024/11/WhatsApp-Image-2024-11-23-at-00.28.27.jpeg" },
   { name: "Pumpkin", price: "₦2,000", category: "Seeds & Powders", img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTjz47SScAhB9bxJx_SPAHt_Ao0ttvEAMyzw&s" },
   { name: "Sunflower", price: "₦1,500", category: "Seeds & Powders", img:"https://www.amritahealthfoods.com/cdn/shop/articles/img-1677260300100.png?v=1677345526" },
